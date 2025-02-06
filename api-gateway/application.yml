@@ -14,6 +14,8 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user/**
+          filters:
+            - StripPrefix=1
         - id: analytics-service
           uri: lb://ANALYTICS-SERVICE
           predicates:

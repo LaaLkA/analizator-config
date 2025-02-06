@@ -3,11 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-server
   client:
     registry-with-eureka: false
     fetch-registry: false
-
-spring:
-  application:
-    name: eureka-server
